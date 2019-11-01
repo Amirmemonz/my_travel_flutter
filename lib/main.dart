@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'screens/homepage.dart';
 import 'screens/introPage.dart';
+import 'screens/journies/murre.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/' : (context) => IntroPage(),
+        '/' : (context) => Murree(),
         '/homepage' : (context) => HomePage()
       },
       title: 'Welcome to Flutter',
