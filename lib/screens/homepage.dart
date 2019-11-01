@@ -17,19 +17,8 @@ class _HomePageState extends State<HomePage> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          iconTheme: new IconThemeData(color: Colors.black),
-          actions: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(right: 15.0),
-              child: CircleAvatar(
-                radius: 28.0,
-                backgroundImage: AssetImage('assets/images/profile.jpg'),
-                backgroundColor: Colors.white,
-              ),
-            )
-          ],
           backgroundColor: Colors.white,
-          title: Text("Travelling App"),
+          title: Text("Travelling App",style: TextStyle(color: Colors.black),),
         ),
         drawer: Drawer(),
         body: new Container(

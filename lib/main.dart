@@ -13,8 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/',
       routes: {
-        '/' : (context) => Murree(),
-        '/homepage' : (context) => HomePage()
+        '/' : (context) => IntroPage(),
+        '/homepage' : (context) => HomePage(),
+        '/murree' : (context) => Murree()
       },
       title: 'Welcome to Flutter',
     );

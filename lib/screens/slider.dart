@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:page_transition/page_transition.dart';
+import 'journies/murre.dart';
 
 class Slider extends StatelessWidget {
   @override
@@ -11,7 +13,9 @@ class Slider extends StatelessWidget {
         return GestureDetector(
           onTap: (){
             if(index == 0){
-              print('1');
+              print('clicked');
+              Navigator.push(context, PageTransition(type: PageTransitionType.leftToRight, child: Murree()));
+
             }
             else if(index == 1){
               print('2');
@@ -44,6 +48,7 @@ class Slider extends StatelessWidget {
           ),
         );
       },
+      autoplay: true,
       itemCount: 9,
       viewportFraction: 0.7,
       scale: 0.8,

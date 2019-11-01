@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:page_transition/page_transition.dart';
+import 'homepage.dart';
 
 class IntroPage extends StatelessWidget {
 
@@ -6,7 +8,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: 'Welcome To My Travel',
       home: Container(
         decoration: BoxDecoration(
             image: DecorationImage(
@@ -57,7 +59,7 @@ class IntroPage extends StatelessWidget {
                         color: Colors.greenAccent,
                         child: Text("Let's Explore"),
                         onPressed: (){
-                          Navigator.pushNamed(context, '/homepage');
+                          Navigator.push(context, PageTransition(type: PageTransitionType.downToUp, child: HomePage()));
                         },
                       ),
                     ),
