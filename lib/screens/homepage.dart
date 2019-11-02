@@ -10,15 +10,13 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int number;
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: Text("Travelling App",style: TextStyle(color: Colors.black),),
+          backgroundColor: Colors.deepPurple,
+          title: Text("Travelling App",style: TextStyle(color: Colors.white),),
         ),
         drawer: Drawer(),
         body: new Container(
@@ -77,7 +75,7 @@ class _HomePageState extends State<HomePage> {
                               child: Container(
                                 child: Text('Before get admission in CUI islamabad i was hate travelling and outing with friends and family but when i shift '
                                     'to islamabad i start exploring hills and mountains and beauty of nothern areas and where i find peace love and passion '
-                                    'of travelling and this blog app i will tell you all my travellig experiences on bike\n\n',style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
+                                    'of travelling and this blog app i will tell you all my travellig experiences on bike.\n\n',style: TextStyle(fontSize: 16,fontWeight: FontWeight.w400),),
                               ),
                             ),
                           ],

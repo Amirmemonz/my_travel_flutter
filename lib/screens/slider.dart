@@ -6,8 +6,8 @@ import 'journies/murre.dart';
 class Slider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    List<String> cities = ['Murree','Mushkpori Top','Margalla Hills','Lake Saif-ul-Malok','Naran','Balakot','Abbottabad','Kulyat','Murree'];
-    List<String> dates = ['23 September 2019','22 October 2019','1 October 2019','24 September 2019','24 September 2019','24 September 2019','23 September 2019','23 September 2019','23 September 2019'];
+    List<String> cities = ['Murree','Mushkpori Top','Lake Saif-ul-Malok'];
+    List<String> dates = ['23 September 2019','22 October 2019','25 September 2019'];
     return new Swiper(
       itemBuilder: (BuildContext context, int index) {
         return GestureDetector(
@@ -48,8 +48,9 @@ class Slider extends StatelessWidget {
           ),
         );
       },
+      autoplayDelay: 4000,
       autoplay: true,
-      itemCount: 9,
+      itemCount: 3,
       viewportFraction: 0.7,
       scale: 0.8,
     );

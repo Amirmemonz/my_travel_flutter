@@ -21,6 +21,7 @@ class Murree extends StatelessWidget {
             children: <Widget>[
               new Swiper(
                 itemBuilder: (BuildContext context, int index) {
+                  int count = index +1;
                   return Padding(
                     padding: const EdgeInsets.only(bottom: 450),
                     child: new Card(
@@ -32,7 +33,7 @@ class Murree extends StatelessWidget {
                                 BorderRadius.all(Radius.circular(10.0)),
                             image: DecorationImage(
                                 image:
-                                    AssetImage("assets/images/pic$index.jpg"),
+                                    AssetImage("assets/images/murree$count.jpg"),
                                 fit: BoxFit.cover)),
                       ),
                     ),
@@ -40,8 +41,8 @@ class Murree extends StatelessWidget {
                 },
                 autoplayDelay: 4000,
                 autoplay: true,
-                itemCount: 10,
-                itemWidth: 400.0,
+                itemCount: 3,
+                itemWidth: 425.0,
                 layout: SwiperLayout.STACK,
               ),
               Padding(
@@ -76,7 +77,9 @@ class Murree extends StatelessWidget {
                           ),
                           Padding(
                             padding: const EdgeInsets.all(12.0),
-                            child: Text(""),
+                            child: Text("On 23 Sep 2019, I decided to travel to the northern areas of Pakistan on my Chinese 70cc bike. It was my first experience on the bike to travel more than 60km. So on 23 Sep morning me and my friend get ready for this amazing journey, fortunately, it was a cloudy day and drizzling we departed from Islamabad on 9 am and we have to cover the distance of 60km from Islamabad to Murree."
+                                "on National Highway road was quite clear and smooth i was riding the bike on average of 50-60km so after when we cover 50km acclivitous road started which gave us a tough time to incline at that road our average speed was 20km"
+                                ". Finally, we reached Murree at 11 am and we parked the bike on Mall road which is the famous spot of Murree. Murree weather was so chill it was drizzling there we stay there for 2 hours take our lunch on Mall Road and departed for our next stop which was Ayubia.",style: TextStyle(fontSize: 16),),
                           )
                         ],
                       ),
